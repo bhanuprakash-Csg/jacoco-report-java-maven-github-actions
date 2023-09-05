@@ -15,7 +15,7 @@ jobs:
     
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v2
 
 
     - name: Set up JDK 17
@@ -29,7 +29,7 @@ jobs:
 
     - name: Generate JaCoCo badge
       id: jacoco
-      uses: cicirello/jacoco-badge-generator@v4
+      uses: cicirello/jacoco-badge-generator@v1
       with:
         badges-directory: badges
         generate-branches-badge: true
